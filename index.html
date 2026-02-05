@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamLine AI | Recommendation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>StreamLine</span>
+            </div>
+            <nav>
+                <ul>
+                    <li class="nav-item active" data-target="dashboard-view"><i class="fas fa-th-large"></i> Dashboard</li>
+                    <li class="nav-item" data-target="profile-view"><i class="fas fa-user"></i> Profile</li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="pro-card">
+                    <p>Internship Project</p>
+                    <span>by Himanshu</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div class="header-left">
+                    <h1 id="page-title">Personalized Recommendations</h1>
+                    <p id="page-subtitle">Powered by Content-Based Filtering</p>
+                </div>
+                <div class="header-right">
+                    <div class="user-profile">
+                        <img src="C:\Users\kumar\Downloads\portfolio-pic.jpg" alt="User">
+                    </div>
+                </div>
+            </header>
+
+            <div id="dashboard-view" class="view-section">
+                <section class="control-panel">
+                    <div class="input-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <select id="movie-select">
+                            <option value="" disabled selected>Select a movie you enjoyed...</option>
+                        </select>
+                    </div>
+                    <button id="recommend-btn">Generate Suggestions</button>
+                </section>
+
+                <section class="results-container">
+                    <div class="section-header">
+                        <h2 id="result-title">Suggested appear here</h2>
+                    </div>
+                    <div class="movie-grid" id="movie-grid">
+                        </div>
+                </section>
+            </div>
+
+            <div id="profile-view" class="view-section" style="display: none;">
+                <div class="profile-container animate-card">
+                    <div class="profile-header">
+                        <img src="C:\Users\kumar\Downloads\portfolio-pic.jpg" alt="Profile">
+                        <h2>Himanshu Kumar</h2>
+                        <p>Artificial Intelligence Intern</p>
+                    </div>
+                    <div class="profile-details">
+                        <div class="detail-card">
+                            <i class="fas fa-envelope"></i>
+                            <span>kumarhimanshu26881@gmail.com</span>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-university"></i>
+                            <span>Arka Jain University | 2027</span>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-code"></i>
+                            <span>Python, JavaScript, AI, Machine Learning</span>
+                        </div>
+                        <div class="detail-card">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Available for Summer Internships 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
